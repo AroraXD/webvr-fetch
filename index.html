@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>📱🎾🐕</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <script> if(location.protocol == 'http:') location.protocol = 'https:'; </script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+    <script src="/script.js" defer></script>
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+  </head>
+  
+  <body>        
+    <p>
+      <button type="button" >Gently shake your phone to throw the ball.</button>
+    </p>
+    
+<!--     aframe stuff -->
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="dog-obj" src="https://cdn.glitch.com/feccbd81-2b3a-43a1-8adf-9a2fe7c1ba03%2FSIEFRING_ShibaInu_LP.obj?1518908043969"></a-asset-item>
+        <a-asset-item id="dog-mtl" src="https://cdn.glitch.com/feccbd81-2b3a-43a1-8adf-9a2fe7c1ba03%2FSIEFRING_ShibaInu_LP.mtl?1518908043568"></a-asset-item>
+      </a-assets>
+      
+              <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+
+              <a-sphere color="red" radius="0.3" position="1 2 -2"></a-sphere>
+
+              <a-entity obj-model="obj: #dog-obj; mtl: #dog-mtl" static-body scale="1 1 1">
+
+      
+              <a-entity environment="preset: forest"></a-entity>
+
+    </a-scene>
+
+    
+    
+  </body>
+</html>

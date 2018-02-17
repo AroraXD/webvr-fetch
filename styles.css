@@ -1,0 +1,31 @@
+h1 {
+  color: purple;
+  text-align: center;
+}
+
+body {
+  padding: 10px;
+  font-family: arial;
+  line-height: 1.4em;
+  background: lightblue;
+  text-align: center;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
